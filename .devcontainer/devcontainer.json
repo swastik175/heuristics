@@ -1,8 +1,6 @@
 {
-  "name": "Python CUDA DevContainer",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "CUDA Python DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,6 +10,9 @@
     }
   },
   "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
     "ghcr.io/devcontainers/features/nvidia-cuda:1": {}
   }
 }
