@@ -1,13 +1,17 @@
 {
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-python.python",
-				"ms-toolsai.jupyter"
-			]
-		}
-	},
-	"features": {
-		 "ghcr.io/devcontainers/features/nvidia-cuda:1": {}
-	}
+  "name": "Python CUDA DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {}
+  }
 }
